@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8ecf7"
+    tools:context="com.example.afrasali.fb1.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autoText="true"
+        android:text="Sign Up"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/RegName"
+        android:layout_alignStart="@+id/RegName" />
+
+    <EditText
+        android:id="@+id/RegName"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/RegPwd"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/RegName"
+        android:layout_alignStart="@+id/RegName"
+        android:layout_below="@+id/RegName"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/SaveButton"
+        style="@android:style/Widget.Button"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="#5cc738"
+        android:onClick="SaveClick"
+        android:text="Sign Up"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/PUpButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:autoText="true"
+        android:background="@color/colorPrimary"
+        android:onClick="PUpClick"
+        android:text="Upload Profile"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/SaveButton"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/RegEmail"
+        android:layout_width="340dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="email@example.com"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/RegPwd"
+        android:layout_alignLeft="@+id/RegPwd"
+        android:layout_alignStart="@+id/RegPwd" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/RegEmail"
+        android:layout_alignStart="@+id/RegEmail"
+        android:layout_below="@+id/RegEmail"
+        android:layout_marginTop="18dp"
+        android:text="Birthday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/monthSpin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:popupBackground="@android:color/background_light" />
+
+    <Spinner
+        android:id="@+id/dateSpin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthSpin"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/monthSpin"
+        android:layout_toRightOf="@+id/monthSpin"
+        android:popupBackground="@android:color/background_light" />
+
+    <Spinner
+        android:id="@+id/yearSpin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dateSpin"
+        android:popupBackground="@android:color/background_light" />
+
+</RelativeLayout>

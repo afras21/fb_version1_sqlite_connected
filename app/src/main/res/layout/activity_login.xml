@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.afrasali.fb1.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e8ecf7">
+
+            <EditText
+                android:id="@+id/GetUser"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="71dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="email address /user name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/GetPwd"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/GetUser"
+                android:layout_alignStart="@+id/GetUser"
+                android:layout_below="@+id/GetUser"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:background="@color/colorPrimary"
+                android:onClick="LClick"
+                android:text="LogIn"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/background_light"
+                android:layout_below="@+id/GetPwd"
+                android:layout_alignLeft="@+id/GetPwd"
+                android:layout_alignStart="@+id/GetPwd" />
+
+            <Button
+                android:id="@+id/RegHere"
+                android:layout_width="340dp"
+                android:layout_height="40dp"
+                android:background="#90c328"
+                android:onClick="RegHereClick"
+                android:text="Create New Account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_marginTop="31dp" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget Password ?"
+                android:layout_below="@+id/RegHere"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to facebook ?"
+                android:textSize="15sp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/LoginButton"
+                android:layout_alignLeft="@+id/LoginButton"
+                android:layout_alignStart="@+id/LoginButton" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English (UK)"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="46dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rw"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/warn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:text="Malayalam"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginTop="36dp"
+        android:text="Telugu"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="Tamil"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:text="Kannadam"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginLeft="47dp"
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:text="Arabic"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignTop="@+id/textView8"
+        android:text="Hindi"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:text="afras productions"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>
